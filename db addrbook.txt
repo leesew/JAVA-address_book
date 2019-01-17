@@ -1,0 +1,17 @@
+use ezen;
+create table addrbook (
+abId int(11) not null auto_increment,
+abName varchar(15) not null,
+abEmail varchar(50) default null,
+abTel varchar(20) default null,
+abBirth varchar(20) not null,
+abCompany varchar(20) not null,
+abMemo varchar(500) default null,
+PRIMARY KEY (abId))
+ENGINE=InnoDB default charset=utf8;
+
+
+insert into addrbook(abName, abEmail, abCompany, abBirth, abTel, abMemo)
+values('김태균', 'taegun@naver.com', '한화이글스', '1985-10-24', '042-566-7896', '타자');
+
+
